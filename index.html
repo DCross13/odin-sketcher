@@ -3,11 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Odin Sketcher</title>
 </head>
 <body>
-    
-    <script src="/js/script.js"></script>
+    <div class="site-wrapper">
+        <div class="title bar">Etch-a-Sketch</div>
+        <div class="content-wrapper">
+            <div class="menu container">
+                <div class="color pick">
+                    <input type="color">
+                </div>
+                <div class="buttons">
+                    <button id="clearBtn">Clear Canvas</button>
+                </div>
+                <div class="grid size">
+                    <input type="range" min="8" max="128" value="32" class="slider" id="gridSizeSlider">
+                </div>
+                <div class="grid container">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="footer bar">Copyright © 2023 DCross13</div>
+    </div>
+    <script src="./js/script.js"></script> <!-- This needs to remain at the bottom of the body div -->
 </body>
 </html>

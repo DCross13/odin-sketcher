@@ -1,0 +1,45 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #DDD6CD;
+}
+
+.site-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bar {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: #DDD6CD;
+}
+
+.content-wrapper {
+    display: flex;
+
+}
+
+.grid.container {
+    height: 600px;
+    background-color: aqua;
+}
+
+.menu.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* MEDIA QUERIES */
+
