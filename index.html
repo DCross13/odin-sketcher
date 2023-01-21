@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous">
     <title>Odin Sketcher</title>
 </head>
 <body>
@@ -12,7 +13,8 @@
         <div class="content-wrapper">
             <div class="menu container">
                 <div class="color pick">
-                    <input type="color">
+                    Color
+                    <input type="color" value="#333333">
                 </div>
                 <div class="buttons">
                     <button id="clearBtn">Clear Canvas</button>
@@ -20,12 +22,15 @@
                 <div class="grid size">
                     <input type="range" min="8" max="128" value="32" class="slider" id="gridSizeSlider">
                 </div>
-                <div class="grid container">
-                    
-                </div>
+            </div>
+            <div class="grid container">
+                
             </div>
         </div>
-        <div class="footer bar">Copyright © 2023 DCross13</div>
+        <div class="footer bar">
+            Copyright © 2023 DCross13
+            <a href="https://github.com/DCross13/odin-sketcher"><img src="./images/github-mark/github-mark-white.svg"></a>
+        </div>
     </div>
     <script src="./js/script.js"></script> <!-- This needs to remain at the bottom of the body div -->
 </body>
