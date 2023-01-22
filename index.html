@@ -12,7 +12,7 @@
         <div class="title bar">Etch-a-Sketch</div>
         <div class="content-wrapper">
             <div class="menu container">
-                <div class="color pick">
+                <div id="colorPick">
                     Color
                     <input type="color" value="#333333">
                 </div>
@@ -20,11 +20,11 @@
                     <button id="clearBtn">Clear Canvas</button>
                 </div>
                 <div class="grid size">
-                    <input type="range" min="8" max="128" value="32" class="slider" id="gridSizeSlider">
+                    <input type="range" min="8" max="20" value="14" class="slider" id="gridSizeSlider">
+                    <button id="sizeApply" class="buttons">Apply Size</button>
                 </div>
             </div>
             <div class="grid container">
-                
             </div>
         </div>
         <div class="footer bar">

@@ -31,7 +31,7 @@ body {
 
 .footer {
     display: flex;
-    gap: 32px;
+    gap: 16px;
 }
 
 .footer img {
@@ -47,9 +47,14 @@ body {
 }
 
 .grid.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
     height: 350px;
     width: 350px;
-    background-color: white;
+    background-color: #fcfbfb;
 }
 
 .menu.container {
@@ -58,7 +63,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
     height: 200px;
-    background-color: white;
+    background-color: #fcfbfb;
     border-radius: 10px;
     /* box-shadow: 5px 5px 10px #333; */
 }
@@ -71,7 +76,10 @@ body {
     color: #333;
 }
 
-
-
-/* MEDIA QUERIES */
-
+.grid.size {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
