@@ -3,11 +3,13 @@ const grid = document.querySelector(".grid.container");
 const slider = document.querySelector(".slider");
 const applySizeBtn = document.querySelector("#sizeApply");
 const colorPick = document.querySelector("#colorPick");
+const clearBtn = document.querySelector("#clearBtn");
 
 //create event listeners
 applySizeBtn.addEventListener("click", () => {createCanvas(slider.value)});
+clearBtn.addEventListener("click", () => {createCanvas(slider.value)});
 
-grid.addEventListener("mouseenter", () => {darkenSquare()});
+
 
 //console.log(slider.value);
 
@@ -30,18 +32,20 @@ function createCanvas(val)
     for (let i = 0; i < val*val; i++)
     {
         const square = document.createElement("div");
-        square.classList.add("square");
-        square.style.backgroundColor = "darkred";
+        //console.log("square" + " " + i);
+        square.classList.add("square" + "-" + i);
+        square.style.backgroundColor = "#FCFBFB";
         square.style.margin = "0";
         square.style.minHeight = setSquareSize() + "px";
         square.style.minWidth = setSquareSize() + "px";
         grid.appendChild(square);
+        square.addEventListener("mouseenter", () => {darkenSquare(i)});
     }
 }
 
-function darkenSquare()
+function darkenSquare(id)
 {
-    console.log("running");
-    const square = document.querySelectorAll("square")
-    square.backgroundColor = "#333333";
+    //console.log("running");
+    const square = document.querySelector(".square" + "-" + id);
+    square.style.backgroundColor = "#333333";
 }

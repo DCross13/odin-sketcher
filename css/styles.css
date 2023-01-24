@@ -43,7 +43,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap-reverse;
-    gap: 50px;
+    gap: 20px;
 }
 
 .grid.container {
@@ -55,6 +55,7 @@ body {
     height: 350px;
     width: 350px;
     background-color: #fcfbfb;
+    border: 2px solid #fcfbfb;
 }
 
 .menu.container {
@@ -62,9 +63,10 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 200px;
+    height: 250px;
     background-color: #fcfbfb;
     border-radius: 10px;
+    gap: 12px;
     /* box-shadow: 5px 5px 10px #333; */
 }
 
@@ -82,4 +84,44 @@ body {
     justify-content: center;
     align-items: center;
     gap: 5px;
+}
+
+.buttons {
+    width: 100px;
+    height: 75px;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    color: #DDD6CD;
+    font-family: "Righteous", sans-serif;
+    font-size: 14px;
+}
+
+.slide-container {
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.slider {
+    margin: 0px 10px ;
+    -webkit-appearance: none;
+    appearance: none;
+    background: #333;
+    outline: none;
+    height: 5px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    cursor: default;
+    background-color: #DDD6CD;
 }
